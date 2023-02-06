@@ -4,6 +4,7 @@ import { Loading } from "../Loading/Loading";
 import { GithubApi } from "../GithubApi/GithubApi";
 import './Projects.css'
 import { Title } from "../Title/Title";
+
 export const Projects = () => {
     const [projects, setProjects] = useState([]);
     const [isLoading, setIsLoading] = useState(true);

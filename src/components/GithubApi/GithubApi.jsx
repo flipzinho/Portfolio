@@ -1,4 +1,5 @@
 import './GithubApi.css'
+import React from 'react';
 export const GithubApi = ({projects}) => {
     return(
         projects.map(project => (

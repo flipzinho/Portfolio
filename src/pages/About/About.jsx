@@ -2,6 +2,7 @@ import './About.css'
 import perfil from '../../assets/profile.jpg'
 import { Text } from '../../components/Text/Text'
 import { Title } from '../../components/Title/Title'
+import React from 'react';
 export const About = () => {
     return(
         <div className="about">

@@ -1,6 +1,7 @@
 
 import { LinkComponent } from '../../components/LinkComponent/LinkComponent'
 import { Text } from '../../components/Text/Text'
+import React from 'react';
 import './Contact.css'
 export const Contact = () => {
     return(

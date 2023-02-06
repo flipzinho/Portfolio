@@ -1,5 +1,7 @@
 import './Home.css'
 import { useState, useEffect } from 'react';
+import React from 'react';
+
 
 export const Home = () => {
   const [myNameText, setMyNameText] = useState('');

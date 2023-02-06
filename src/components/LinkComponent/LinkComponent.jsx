@@ -1,3 +1,4 @@
+import React from 'react';
 import './LinkComponent.css'
 export const LinkComponent = (props) => {
     return (
