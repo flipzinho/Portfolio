@@ -1,5 +1,5 @@
 
-import { Button } from '../../components/Button/Button'
+import { LinkComponent } from '../../components/LinkComponent/LinkComponent'
 import { Text } from '../../components/Text/Text'
 import './Contact.css'
 export const Contact = () => {
@@ -11,9 +11,10 @@ export const Contact = () => {
             </h2> <br />
             <Text text="e-mail: felipe.afonsobarbosa@gmail.com"/>
             <Text text="Phone: +55 (11) 97665-6681"/>
-            <Text text="You can also email-me clicking on button below!"/>
+            
+            <LinkComponent textLink='Linkedin:' link='https://www.linkedin.com/in/felipe-ribeiro-54b5671b0/' text='https://www.linkedin.com/in/felipe-ribeiro-54b5671b0/'/>
             </div>
-            <Button/>
+            
             <div>
 
             </div>

@@ -9,10 +9,14 @@ export const Projects = () => {
     const [isLoading, setIsLoading] = useState(true);
   
     useEffect(() => {
-      
       axios.get("https://api.github.com/users/flipzinho/repos")
         .then(response => {
-          setProjects(response.data);
+          const updatedProjects = response.data.map(project => {
+            return {
+              ...project,
+            };
+          });
+          setProjects(updatedProjects);
           setIsLoading(false);
         })
         .catch(error => {
@@ -24,13 +28,16 @@ export const Projects = () => {
       <div>
         {isLoading ? (
           <Loading />
-        ) : ( <>
-          <Title text='Portfolio'/>
+        ) : ( 
+          <div className="dv-top"> <Title text='Portfolio'/> 
+         
           <div className="gitContainer"> 
          
           <GithubApi projects={projects}/> </div>
+          </div>
+          
            
-          </>
+         
         )}
       </div>
     );

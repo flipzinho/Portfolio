@@ -9,6 +9,7 @@ import { Contact } from './pages/Contact/Contact';
 import { About } from './pages/About/About';
 import { NavBar } from './components/NavBar/NavBar';
 import { Footer } from './components/Footer/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

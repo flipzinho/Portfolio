@@ -4,10 +4,11 @@ import { useState, useEffect } from 'react';
 export const Home = () => {
   const [myNameText, setMyNameText] = useState('');
   const [descriptionVisible, setDescriptionVisible] = useState(false); 
-  
+    
   useEffect(() => {
     let index = 0;
-    const name = "Hi! I'm Felipe Ribeiro and I'm a web developer.";
+   
+    const name = "Hi! I'm Felipe Ribeiro and I'm a web developer."; 
     const typing = setInterval(() => {
       setMyNameText(name.slice(0, index));
       index++;
